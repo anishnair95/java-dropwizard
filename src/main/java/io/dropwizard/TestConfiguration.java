@@ -25,6 +25,7 @@ public class TestConfiguration extends Configuration {
     private DataSourceFactory database = new DataSourceFactory();
 
 
+    // for deserialization jackson will take values from the config file and also serialization as well
     @JsonProperty
     public String getTemplate() {
         return template;

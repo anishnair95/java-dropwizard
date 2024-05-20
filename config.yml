@@ -2,7 +2,7 @@ template: Hello, %s!
 defaultName: Stranger
 
 server:
-  rootPath: /api/*
+  rootPath: /api/v1/*
   applicationConnectors:
     - type: http
       port: 8080
@@ -49,3 +49,7 @@ logging:
   level: INFO
   loggers:
     io.dropwizard: DEBUG
+  appenders:
+    - type: console
+#      layout:
+#        type: json
